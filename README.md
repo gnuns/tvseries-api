@@ -9,22 +9,23 @@ TV Series API is developed to make it easier for anyone to feed their own versio
 
 Installation
 ============
+```sh
+# Install NodeJS, MongoDB and Git
+sudo apt-get install -y node mongodb git
 
-Install NodeJS, MongoDB and Git
-`sudo apt-get install -y node mongodb git`
+# Setup MongoDB dirs
+mkdir -p /data/db
 
-Setup MongoDB dirs
-`mkdir -p /data/db`
+# Clone the repo
+git clone https://github.com/hezag/tvseries-api.git
 
-Clone the repo
-`git clone https://popcorncouzx5cjn.onion.to/PTCE/tvseries-api.git`
+# Install dependencies
+cd tvseries-api
+npm install
 
-Install dependencies
-`cd tvseries-api`
-`npm install`
-
-Fire it up!
-`node index`
+#Fire it up!
+node index.js
+```
 
 Hint: the default port os set to `5000` currently, but can be changed in the `config.js` file.
 
@@ -205,7 +206,7 @@ You can filter shows by keyowrds using the following
 
 `shows/1?keywords=` (Again the 1 is used for pagination)
 
-Routes
+Live example
 ======
 
-Live example: https://eztvapi.ml/
+https://eztvapi.ml/
