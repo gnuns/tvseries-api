@@ -1,7 +1,9 @@
 TV Series API
 =========
 
-TV Series API is developed to make it easier for anyone to feed their own versions of [Popcorn Time CE](http://popcorntime.ag). It contains:
+TV Series API is developed to make it easier for anyone to feed their own versions of [Popcorn Time CE](https://github.com/PopcornTime-CE/desktop).
+
+It contains:
 
   - Metadata about TV Shows and individual episodes (taken from Trakt)
   - Multiple quality magnet links for every episode
@@ -23,7 +25,7 @@ git clone https://github.com/hezag/tvseries-api.git
 cd tvseries-api
 npm install
 
-#Fire it up!
+# Fire it up!
 node index.js
 ```
 
