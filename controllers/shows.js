@@ -54,7 +54,9 @@ module.exports = {
                 if (data.sort == "year") sort = {year: data.order};
                 if (data.sort == "updated") {
                   sort = {"episodes.first_aired": data.order};
-                  query = {num_seasons: {$gt: 0}, "episodes.first_aired": {$lt : (Date.now() / 1000 | 0)}};
+				  if (!data.keywords) {
+					query = {num_seasons: {$gt: 0}, "episodes.first_aired": {$lt : (Date.now() / 1000 | 0)}};
+				  }
                 }
                 if (data.sort == "name") sort = {title: (data.order * -1)};
             }
