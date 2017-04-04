@@ -19,7 +19,7 @@ sudo apt-get install -y node mongodb git
 mkdir -p /data/db
 
 # Clone the repo
-git clone https://github.com/hezag/tvseries-api.git
+git clone https://github.com/gnuns/tvseries-api.git
 
 # Install dependencies
 cd tvseries-api
