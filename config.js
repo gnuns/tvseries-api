@@ -5,6 +5,7 @@ module.exports = {
 	scrapeTime: '00 00 * * * *',
 	scrapeTtl: 1000 * 60 * 60 * 8, // 8 hours
 	pageSize: 50,
+	omdbAPIKey: '',
 	serverName: 'PopcornTime-CE EZTV API',
 	tempDir: './tmp',
 	traktKey: '70c43f8f4c0de74a33ac1e66b6067f11d14ad13e33cd4ebd08860ba8be014907',
